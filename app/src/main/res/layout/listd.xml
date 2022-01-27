@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_listbox"
+        android:padding="10dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_backgroundlist"
+            android:layout_marginRight="10dp"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/relatex"
+          android:layout_below="@+id/image">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="@string/nama"
+            android:layout_marginTop="20dp"
+            android:id="@+id/id"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textSize="12dp"
+            android:layout_below="@+id/id"
+            android:id="@+id/idd"
+            android:textAlignment="center"/>
+       </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relatex"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/editicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="edit"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="5dp"
+                    android:backgroundTint="#000080"
+                    android:layout_marginEnd="@dimen/margin_value_5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:id="@+id/deleteicon"
+                    android:text="hapus"
+                    android:backgroundTint="#800000"
+                    android:layout_marginStart="@dimen/margin_value_5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

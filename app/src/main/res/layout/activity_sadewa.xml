@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imagesss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/backlog"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_backgroundlist" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/adminsa"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logologin"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/adminsa"
+                android:id="@+id/logonih"
+                android:layout_marginBottom="50dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="120dp"
+                android:text="Lihat data"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:backgroundTint="#f5feff"
+                android:layout_below="@+id/logonih"
+                android:id="@+id/lihdat"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="120dp"
+                android:layout_height="wrap_content"
+                android:text="Kelola data"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:backgroundTint="#f5feff"
+                android:layout_below="@+id/lihdat"
+                android:id="@+id/keldat"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

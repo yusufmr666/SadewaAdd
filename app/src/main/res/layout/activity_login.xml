@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlog">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="150dp">
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_logologin"
+      android:id="@+id/imglogo"/>
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/rellog"
+          android:layout_below="@+id/imglogo"
+          android:layout_marginTop="70dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:background="@drawable/ic_background_list">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Login"
+              android:textStyle="bold"
+              android:textSize="24dp"
+              android:textAlignment="center"
+              android:textColor="@color/green"
+              android:layout_marginTop="20dp"
+              android:id="@+id/txtlogin"/>
+  <TextView
+      android:id="@+id/textView12"
+      android:layout_below="@+id/txtlogin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="12dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="25dp"
+      android:textStyle="bold"
+      android:text="@string/email"
+      android:textColor="@color/green" />
+
+  <EditText
+      android:id="@+id/Email"
+      android:layout_below="@+id/textView12"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="@dimen/margin_value_5dp"
+      android:layout_marginEnd="25dp"
+      android:background="@drawable/ic_background_editprofile"
+      android:ems="10"
+      android:inputType="textEmailAddress"
+      android:padding="10dp"
+      android:textColor="@color/green"
+      android:textColorHint="@color/green"
+      android:textSize="14sp"/>
+
+
+  <TextView
+      android:id="@+id/textView13"
+      android:layout_below="@id/Email"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:textStyle="bold"
+      android:textSize="12dp"
+      android:layout_marginLeft="25dp"
+      android:text="@string/password"
+      android:textColor="@color/green"
+     />
+
+  <EditText
+      android:id="@+id/password"
+      android:layout_below="@id/textView13"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="25dp"
+      android:background="@drawable/ic_background_editprofile"
+      android:ems="10"
+      android:inputType="textPassword"
+      android:padding="10dp"
+      android:textColor="@color/green"
+      android:textSize="14sp"
+    />
+
+          <Button
+              android:id="@+id/loginBtn"
+              android:layout_width="match_parent"
+              android:layout_below="@+id/password"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="220dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginEnd="25dp"
+              android:text="@string/login"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:padding="5dp"
+              android:textAlignment="center"
+              android:background="@color/green"
+              android:textSize="13sp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/password"
+              android:layout_marginBottom="30dp"/>
+
+      </RelativeLayout>
+      <ProgressBar
+          android:id="@+id/progressBar"
+          android:layout_below="@+id/rellog"
+          style="?android:attr/progressBarStyle"
+          android:textAlignment="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="invisible"
+          android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="25dp">
+        <ImageView
+            android:layout_width="221dp"
+            android:layout_height="41dp"
+            android:src="@drawable/logorevisi"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_backgroundlist"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update Content Panel"
+        android:background="@color/green"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:id="@+id/txtkuy"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtkuy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/margin_value_10dp"
+        android:layout_marginStart="@dimen/margin_value_10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Destinasi"
+        android:padding="@dimen/margin_value_10dp"
+        android:background="@drawable/ic_background_editprofile"
+        android:id="@+id/namades"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Destinasi"
+        android:padding="@dimen/margin_value_10dp"
+        android:background="@drawable/ic_background_editprofile"
+        android:id="@+id/alamatdes"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Destinasi"
+        android:padding="@dimen/margin_value_10dp"
+        android:background="@drawable/ic_background_editprofile"
+        android:id="@+id/deskripsides"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_value_10dp"
+        android:background="@drawable/ic_background_editprofile"
+        android:hint="Sumber Deskripsi"
+        android:id="@+id/sumdes"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textAlignment="center"
+        android:id="@+id/usubmit"
+        android:background="@color/green"
+        android:padding="@dimen/margin_value_5dp"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        />
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>
+</ScrollView>
